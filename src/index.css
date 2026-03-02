@@ -1,0 +1,98 @@
+.w-20 {
+  width: 20%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.logo-text {
+  width: 200px;
+}
+
+.bi {
+  margin-right: 10px;
+}
+
+body {
+  font-size: x-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Story {
+  display: flex;
+  gap:25px;
+  margin-top: 20px;
+  align-items: center;
+}
+.Story > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dp {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.post {
+  margin-top: 5px;
+  width: 450px;
+  height: 400px;
+}
+
+.name {
+  margin-top: 16px;
+  margin-left: 6px;
+}
+
+.likes {
+  margin: 0;
+  font-size: large;
+}
+
+.suggestions {
+  margin-top: 40px;
+}
+
+.suggestions small {
+  font-size: 20px;
+}
+
+.head {
+  font-size: large;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+
+.suggestion {
+  margin-left: 60px;
+}
+
+.follow {
+  margin-right: 40px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.gradient{
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff00ff,#ff6600,#ffcc00);
+}
+.Story-dp{
+  border-radius: 50%;
+  width:80px;
+  height: 80px;
+}
+.story-name{
+  width: 80px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+}
