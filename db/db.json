@@ -5,9 +5,9 @@
       "user": {
         "id": 101,
         "username": "Sanjay28",
-        "profile_pic": "src/assets/profile1.jpg"
+        "profile_pic": "/assets/profile1.jpg"
       },
-      "image": "src/assets/post1.jpg",
+      "image": "/assets/post1.jpg",
       "caption": "Capturing aesthetics! #fyp #nature",
       "likes": 120,
       "comments": [
@@ -27,9 +27,9 @@
       "user": {
         "id": 102,
         "username": "Saarah._._",
-        "profile_pic": "src/assets/profile2.jpg"
+        "profile_pic": "/assets/profile2.jpg"
       },
-      "image": "src/assets/post2.jpg",
+      "image": "/assets/post2.jpg",
       "caption": "Just me!",
       "likes": 210,
       "comments": [
@@ -49,9 +49,9 @@
       "user": {
         "id": 103,
         "username": "Sam05._._",
-        "profile_pic": "src/assets/profile3.jpg"
+        "profile_pic": "/assets/profile3.jpg"
       },
-      "image": "src/assets/post3.jpg",
+      "image": "/assets/post3.jpg",
       "caption": "Sunflower theory!",
       "likes": 340,
       "comments": [
@@ -67,20 +67,20 @@
     {
       "id": 1,
       "username": "Sanjay28",
-      "profile_pic": "src/assets/profile1.jpg",
-      "story_image": "src/assets/story1.jpg"
+      "profile_pic": "/assets/profile1.jpg",
+      "story_image": "/assets/story1.jpg"
     },
     {
       "id": 2,
       "username": "Saarah._._",
-      "profile_pic": "src/assets/profile2.jpg",
-      "story_image": "src/assets/story2.jpg"
+      "profile_pic": "/assets/profile2.jpg",
+      "story_image": "/assets/story2.jpg"
     },
     {
       "id": 3,
       "username": "Sam05._._",
-      "profile_pic": "src/assets/profile3.jpg",
-      "story_image": "src/assets/story3.jpg"
+      "profile_pic": "/assets/profile3.jpg",
+      "story_image": "/assets/Story3.jpg"
     }
   ],
   "users": [
@@ -88,7 +88,7 @@
       "id": 101,
       "username": "Sanjay28",
       "name": "Sanju",
-      "profile_pic": "src/assets/profile1.jpg",
+      "profile_pic": "/assets/profile1.jpg",
       "bio": "Nature photographer 📷",
       "followers": 520,
       "following": 310
@@ -97,7 +97,7 @@
       "id": 102,
       "username": "Saarah._._",
       "name": "Saarah Begum",
-      "profile_pic": "src/assets/profile2.jpg",
+      "profile_pic": "/assets/profile2.jpg",
       "bio": "Livin'",
       "followers": 890,
       "following": 420
@@ -106,7 +106,7 @@
       "id": 103,
       "username": "Sam05._._",
       "name": "Sam",
-      "profile_pic": "src/assets/profile3.jpg",
+      "profile_pic": "/assets/profile3.jpg",
       "bio": "Whatever it takes ~",
       "followers": 550,
       "following": 400
@@ -116,7 +116,7 @@
     "id": 104,
     "username": "Chaoticccc._",
     "name": "Sam",
-    "profile_pic": "src/assets/profile3.jpg",
+    "profile_pic": "/assets/profile3.jpg",
     "bio": "@silambarasan ❤️",
     "followers": 550,
     "following": 400
@@ -126,7 +126,7 @@
       "id": 105,
       "username": "Rithu1503",
       "name": "Rithu",
-      "profile_pic": "src/assets/Story3.jpg",
+      "profile_pic": "/assets/Story3.jpg",
       "bio": "Rithu",
       "followers": 570,
       "following": 490
@@ -135,7 +135,7 @@
       "id": 106,
       "username": "Madhu19",
       "name": "Maddy",
-      "profile_pic": "src/assets/profile4.jpg",
+      "profile_pic": "/assets/profile4.jpg",
       "bio": "Travel",
       "followers": 590,
       "following": 490
@@ -144,7 +144,7 @@
       "id": 107,
       "username": "Arunprasath",
       "name": "Arun",
-      "profile_pic": "src/assets/profile5.jpg",
+      "profile_pic": "/assets/profile5.jpg",
       "bio": "Photographer!",
       "followers": 480,
       "following": 120
