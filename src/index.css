@@ -150,3 +150,29 @@ body {
 .right-arrow {
   right: 10px;
 }
+
+.side{
+  cursor: pointer;
+}
+.sidebar:hover{
+  background-color: lightgray;
+}
+.profile-dp{
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+
+}
+.info-pfp{
+  font-size: large;
+}
+.pfp{
+  background-color: #ddd;
+  border-radius: 10px;
+  padding: 10px;
+}
+.pp{
+  margin-top: 10px;
+  margin-left:440px;
+  cursor: pointer;
+}

@@ -1,7 +1,7 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "user": {
         "id": 101,
         "username": "Sanjay28",
@@ -23,7 +23,7 @@
       "timestamp": "2025-02-11T14:30:00Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "user": {
         "id": 102,
         "username": "Saarah._._",
@@ -45,7 +45,7 @@
       "timestamp": "2025-02-12T10:15:00Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "user": {
         "id": 103,
         "username": "Sam05._._",
@@ -65,19 +65,19 @@
   ],
   "stories": [
     {
-      "id": 1,
+      "id": "1",
       "username": "Sanjay28",
       "profile_pic": "/assets/profile1.jpg",
       "story_image": "/assets/story1.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "Saarah._._",
       "profile_pic": "/assets/profile2.jpg",
       "story_image": "/assets/story2.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "username": "Sam05._._",
       "profile_pic": "/assets/profile3.jpg",
       "story_image": "/assets/Story3.jpg"
@@ -85,7 +85,7 @@
   ],
   "users": [
     {
-      "id": 101,
+      "id": "101",
       "username": "Sanjay28",
       "name": "Sanju",
       "profile_pic": "/assets/profile1.jpg",
@@ -94,7 +94,7 @@
       "following": 310
     },
     {
-      "id": 102,
+      "id": "102",
       "username": "Saarah._._",
       "name": "Saarah Begum",
       "profile_pic": "/assets/profile2.jpg",
@@ -103,7 +103,7 @@
       "following": 420
     },
     {
-      "id": 103,
+      "id": "103",
       "username": "Sam05._._",
       "name": "Sam",
       "profile_pic": "/assets/profile3.jpg",
@@ -116,14 +116,15 @@
     "id": 104,
     "username": "Chaoticccc._",
     "name": "Sam",
-    "profile_pic": "/assets/profile3.jpg",
+    "profile_pic": "/assets/story1.jpg",
     "bio": "@silambarasan ❤️",
+    "posts": 0,
     "followers": 550,
     "following": 400
   },
   "Suggestions": [
     {
-      "id": 105,
+      "id": "105",
       "username": "Rithu1503",
       "name": "Rithu",
       "profile_pic": "/assets/Story3.jpg",
@@ -132,7 +133,7 @@
       "following": 490
     },
     {
-      "id": 106,
+      "id": "106",
       "username": "Madhu19",
       "name": "Maddy",
       "profile_pic": "/assets/profile4.jpg",
@@ -141,7 +142,7 @@
       "following": 490
     },
     {
-      "id": 107,
+      "id": "107",
       "username": "Arunprasath",
       "name": "Arun",
       "profile_pic": "/assets/profile5.jpg",
@@ -149,5 +150,6 @@
       "followers": 480,
       "following": 120
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
