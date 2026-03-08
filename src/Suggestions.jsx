@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import axios from 'axios';
 function Suggestions() {
 
   const [sugg, setsugg] = useState([]);
@@ -17,6 +17,13 @@ function Suggestions() {
       catch(err => console.log(err))
   }, []);
 
+  const handleFollow = async(id,username) => {
+    axios.post('http://localhost:3001/Followers',
+    {"id":id,"username":username})
+    .then(alert('Followed'))
+    .catch(err=>console.log(err));
+
+  }
   return (
     <div className="suggestion">
       <div >
@@ -41,7 +48,7 @@ function Suggestions() {
                 <div className='d-flex'>
                   <img className=" dp rounded-circle" src={suggestion.profile_pic} />
                   <h5 className="name">{suggestion.username}</h5>
-                  <p className="text-primary ms-auto follow">Follow</p>
+                  <a className="text-primary ms-auto follow" onClick={()=>{handleFollow(suggestion.id),suggestion.username}}>Follow</a>
                 </div>
               </div>
             ))}

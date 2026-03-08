@@ -2,10 +2,18 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 function Profile() {
 
+    const [followers, setFollowers] = useState([])
+
+
     const [profile, setprofile] = useState(null);
     useEffect(() => {
         axios.get('http://localhost:3001/profile')
             .then(data => { setprofile(data.data); console.log(data); })
+            .catch(err => console.log(err))
+
+        axios.get('http://localhost:3001/Followers')
+            .then(data => setFollowers(data.data))
+            .catch(err => console.log(err));
     }, [])
 
     const [editmode, seteditmode] = useState(false);
@@ -19,10 +27,10 @@ function Profile() {
     function handleclick() {
         seteditmode(true);
     }
-    
-    const handleupdate = async()=>{
-        axios.put('http://localhost:3001/profile',profile)
-        .then(console.log("updated")).catch(err=>console.log(err));
+
+    const handleupdate = async () => {
+        axios.put('http://localhost:3001/profile', profile)
+            .then(console.log("updated")).catch(err => console.log(err));
     }
 
     return (
@@ -61,7 +69,7 @@ function Profile() {
                                     <div className='mt-3'>
                                         <input type="text" name='username' value={profile.username} className='form-control my-4' onChange={HandleOnChange} />
                                         <input type="text" name="profile_pic" value={profile.profile_pic} className='form-control' onChange={HandleOnChange} />
-                                    </div>  
+                                    </div>
                                 )
                             }
                         </div>
@@ -73,6 +81,15 @@ function Profile() {
                         <button className='btn bg-info text-light' onClick={handleupdate}>Update</button>
                     </div>
                 </div>) : <p>Loading...</p>}
+
+            {followers.length>0 ?
+            (
+                followers.map(follower=>
+                (
+                    <div key={follower.id}>{follower.username}</div>
+                )
+                )
+            ) :<p>Loading...</p>}
         </div>
     )
 }
