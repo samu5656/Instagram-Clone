@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 function Profile() {
 
-    const [followers, setFollowers] = useState([])
 
 
     const [profile, setprofile] = useState(null);
@@ -11,9 +10,6 @@ function Profile() {
             .then(data => { setprofile(data.data); console.log(data); })
             .catch(err => console.log(err))
 
-        axios.get('http://localhost:3001/Followers')
-            .then(data => setFollowers(data.data))
-            .catch(err => console.log(err));
     }, [])
 
     const [editmode, seteditmode] = useState(false);
@@ -82,14 +78,7 @@ function Profile() {
                     </div>
                 </div>) : <p>Loading...</p>}
 
-            {followers.length>0 ?
-            (
-                followers.map(follower=>
-                (
-                    <div key={follower.id}>{follower.username}</div>
-                )
-                )
-            ) :<p>Loading...</p>}
+
         </div>
     )
 }

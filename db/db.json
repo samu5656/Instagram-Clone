@@ -151,40 +151,5 @@
       "following": 120
     }
   ],
-  "Followers": [
-    {
-      "id": "105",
-      "username": "Rithu1503",
-      "name": "Rithu",
-      "profile_pic": "/assets/Story3.jpg",
-      "bio": "Rithu",
-      "followers": 570,
-      "following": 490
-    },
-    {
-      "id": "106",
-      "username": "Madhu19",
-      "name": "Maddy",
-      "profile_pic": "/assets/profile4.jpg",
-      "bio": "Travel",
-      "followers": 590,
-      "following": 490
-    },
-    {
-      "id": "107",
-      "username": "Arunprasath",
-      "name": "Arun",
-      "profile_pic": "/assets/profile5.jpg",
-      "bio": "Photographer!",
-      "followers": 480,
-      "following": 120
-    },
-    {
-      "id": "105"
-    },
-    {
-      "id": "106"
-    }
-  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
