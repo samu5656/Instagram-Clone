@@ -3,7 +3,7 @@ import axios from 'axios'
 function Profile() {
 
 
-
+    //To fetch profile information
     const [profile, setprofile] = useState(null);
     useEffect(() => {
         axios.get('http://localhost:3001/profile')
@@ -12,6 +12,7 @@ function Profile() {
 
     }, [])
 
+    //To control edit mode
     const [editmode, seteditmode] = useState(false);
     function HandleOnChange(e) {
         setprofile(prev => ({
@@ -26,7 +27,7 @@ function Profile() {
 
     const handleupdate = async () => {
         axios.put('http://localhost:3001/profile', profile)
-            .then(console.log("updated")).catch(err => console.log(err));
+            .then(alert("updated")).catch(err => console.log(err));
     }
 
     return (
@@ -60,11 +61,13 @@ function Profile() {
                             </div>
 
                             <p className="mb-0">{profile.bio}</p>
+                            {/* //editing fields: */}
                             {
                                 editmode && (
                                     <div className='mt-3'>
                                         <input type="text" name='username' value={profile.username} className='form-control my-4' onChange={HandleOnChange} />
                                         <input type="text" name="profile_pic" value={profile.profile_pic} className='form-control' onChange={HandleOnChange} />
+                                        <button className='btn bg-info text-light' onClick={handleupdate}>Update</button>
                                     </div>
                                 )
                             }
@@ -74,7 +77,6 @@ function Profile() {
                     <div className='d-flex gap-3 pp'>
                         <h5 className='pfp' onClick={handleclick} >Edit profile</h5>
                         <h5 className='pfp'>View Archive</h5>
-                        <button className='btn bg-info text-light' onClick={handleupdate}>Update</button>
                     </div>
                 </div>) : <p>Loading...</p>}
 
